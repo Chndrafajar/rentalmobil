@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaPhoneAlt } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 export default function HeroSection() {
   return (
@@ -20,7 +21,9 @@ export default function HeroSection() {
               <button>
                 Rental Now <FaPhoneAlt />
               </button>
-              <a href="">See all cars</a>
+              <Link className="btn-seecars" to="vehicle">
+                See all cars
+              </Link>
             </div>
           </div>
           <div className="col-md-6">
